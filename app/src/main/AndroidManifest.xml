@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/oasis_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BookAppointment"></activity>
+        <activity android:name=".BookAppointment"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".EntryPortal" />
         <activity android:name=".AppDashboad" />
-        <activity android:name=".Profile" />
+        <activity android:name=".Profile"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".WelcomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />

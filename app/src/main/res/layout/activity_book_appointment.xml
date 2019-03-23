@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BookAppointment"
+    android:layout_margin="5dp"
     android:orientation="vertical">
 
     <ScrollView
@@ -17,19 +18,35 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@mipmap/reserve"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Date Of Appointment"/>
 
-    <DatePicker
-        android:id="@+id/date"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    </DatePicker>
+            <RelativeLayout
+                android:id="@+id/pickDate"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/birthDay"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="DD/MM/YYYY"/>
+            </RelativeLayout>
 
     <TextView
+        android:layout_marginTop="12dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Speciality"/>
@@ -41,16 +58,27 @@
     </Spinner>
 
     <TextView
+        android:layout_marginTop="12dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add Note"/>
 
     <EditText
+        android:background="@drawable/button_back"
         android:id="@+id/notes"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:hint="Provide Some Notes."
         android:gravity="top"/>
+
+            <Button
+                android:id="@+id/continueApply"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_back"
+                android:drawableRight="@drawable/ic_forword_black"
+                android:text="Continue" />
 
         </LinearLayout>
     </ScrollView>
